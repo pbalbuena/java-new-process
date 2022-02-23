@@ -10,11 +10,10 @@ public final class App {
     private App() {
     }
 
-
-    private static String getInput(){
+    private static String getInput() {
         System.out.println("Introduce el nombre del proceso que deseas abrir.");
         Scanner in = new Scanner(System.in);
-        String output = in.nextLine(); 
+        String output = in.nextLine();
         in.close();
         return output;
     }
@@ -35,6 +34,5 @@ public final class App {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
     }
 }
